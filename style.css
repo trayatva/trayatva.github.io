@@ -137,11 +137,40 @@ button {
   padding: 16px 20px;
 }
 .header-inner .navbar-brand {
-  font-size: 42px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-}
+    display: flex; /* Ensures the logo aligns well */
+    align-items: center; /* Vertically centers the logo */
+    font-size: 36px; /* Default font size */
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+  }
+  
+  .navbar-logo {
+    height: 40px; /* Default height */
+    width: auto; /* Maintain aspect ratio */
+    transition: all 0.3s ease-in-out; /* Smooth scaling effect */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header-inner .navbar-brand {
+      font-size: 28px; /* Adjusted font size for tablets */
+    }
+  
+    .navbar-logo {
+      height: 30px; /* Smaller logo size for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-inner .navbar-brand {
+      font-size: 22px; /* Adjusted font size for mobile */
+    }
+  
+    .navbar-logo {
+      height: 24px; /* Smaller logo size for mobile */
+    }
+  }
 .header-inner nav ul {
   display: flex;
   display: -webkit-flex;
