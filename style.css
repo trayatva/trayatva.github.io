@@ -111,18 +111,109 @@ button {
     margin: 0 auto; /* Center horizontally */
   }
   
+ /* Main text styles */
 .main-txt {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  width: fit-content;
-  text-transform: uppercase;
-  letter-spacing: -4px;
-  z-index: -1;
-  transition: opacity 0.5s ease-in-out;
-}
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: -2px; /* Adjusted for readability */
+    font-size: 3rem; /* Default scalable size */
+    z-index: -1;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Image inside .main-txt */
+  .main-img {
+    width: 100%; /* Ensure the image scales responsively */
+    max-width: 600px; /* Limit the max size of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Tablet and smaller screen responsiveness */
+  @media (max-width: 768px) {
+    .main-txt {
+      font-size: 2rem; /* Smaller font size for tablets */
+      letter-spacing: -1px; /* Adjusted for readability */
+    }
+  
+    .main-img {
+      max-width: 400px; /* Limit image size on tablets */
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 480px) {
+    .main-txt {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+      letter-spacing: 0px; /* No letter-spacing on mobile */
+    }
+  
+    .main-img {
+      max-width: 300px; /* Limit image size on mobile */
+    }
+  }
+  /* Default styles for the subtitle */
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Default font size */
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    text-decoration: none;
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Add spacing */
+  }
+  
+  /* Responsive styles for tablets */
+  @media (max-width: 768px) {
+    .subtitle {
+      font-size: 1.5rem; /* Slightly smaller font size for tablets */
+      letter-spacing: 0.5px; /* Adjust letter spacing */
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 480px) {
+    .subtitle {
+      font-size: 1rem; /* Smaller font size for mobile */
+      letter-spacing: 0px; /* No letter spacing for mobile */
+    }
+  }
+
+  .subtitle2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Default font size */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    text-decoration: none;
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Add spacing */
+  }
+  
+  /* Responsive styles for tablets */
+  @media (max-width: 768px) {
+    .subtitle {
+      font-size: 1.5rem; /* Slightly smaller font size for tablets */
+      letter-spacing: 0.5px; /* Adjust letter spacing */
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 480px) {
+    .subtitle {
+      font-size: 1rem; /* Smaller font size for mobile */
+      letter-spacing: 0px; /* No letter spacing for mobile */
+    }
+  }
+  
 
 .hide-text {
   opacity: 0;
@@ -136,6 +227,7 @@ button {
   align-items: center;
   padding: 16px 20px;
 }
+ /* Navbar brand styles */
 .header-inner .navbar-brand {
     display: flex; /* Ensures the logo aligns well */
     align-items: center; /* Vertically centers the logo */
@@ -171,6 +263,7 @@ button {
       height: 24px; /* Smaller logo size for mobile */
     }
   }
+  
 .header-inner nav ul {
   display: flex;
   display: -webkit-flex;
